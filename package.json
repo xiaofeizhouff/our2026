@@ -1,0 +1,28 @@
+{
+  "name": "our-2026-questionnaire",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "@supabase/supabase-js": "latest",
+    "tailwindcss": "latest",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@eslint/eslintrc": "latest",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "latest"
+  }
+}

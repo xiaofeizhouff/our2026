@@ -1,0 +1,2 @@
+export function durationFrom(date?: string) { if (!date) return null; const start = new Date(`${date}T00:00:00`); if (Number.isNaN(start.getTime())) return null; const ms=Math.max(0,Date.now()-start.getTime()); const days=Math.floor(ms/86400000); return { days, hours:days*24, years:Math.max(1, new Date().getFullYear()-start.getFullYear()+1) }; }
+export function formatDrink(value: unknown) { const v=value as {drink?:string;temperature?:"iced"|"hot"}; if (!v?.drink) return "还没写下"; return `${v.temperature === "iced" ? "冰" : "热"}${v.drink}`; }
