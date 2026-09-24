@@ -1,11 +1,20 @@
 @import "tailwindcss";
 
-:root { --ink:#26334d; --paper:#fffdf8; --coral:#ff7769; --yellow:#ffd86b; --blue:#8ecdf4; --lavender:#b7a7eb; }
+:root { --ink:#1f3155; --paper:#fff9e8; --coral:#e75c5c; --yellow:#ffd774; --blue:#a9d8eb; --lavender:#cbb8e9; --mint:#bee6c8; --pixel-shadow:#26334d; }
 * { box-sizing:border-box; }
 body { margin:0; color:var(--ink); background:#fff8ef; font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif; }
 button,input { font:inherit; }
 button { -webkit-tap-highlight-color:transparent; }
-.page-bg { min-height:100dvh; overflow:hidden; background:radial-gradient(circle at 12% 8%,#ffe3a6 0 8%,transparent 25%),radial-gradient(circle at 90% 16%,#e7c8ff 0 8%,transparent 30%),linear-gradient(150deg,#fff9ee,#f3f7ff 50%,#fff2e7); }
+.page-bg { min-height:100dvh; overflow:hidden; background:radial-gradient(circle at 14% 9%,#ffe295 0 7%,transparent 22%),radial-gradient(circle at 88% 17%,#dcc8ef 0 7%,transparent 25%),linear-gradient(150deg,#fff4c9,#f4eafa 58%,#ddecf1); }
+.pixel-panel { border:3px solid var(--ink); border-radius:8px; background:rgba(255,250,235,.9); box-shadow:5px 5px 0 var(--pixel-shadow), inset 0 0 0 2px #fff; }
+.pixel-label { display:inline-flex; align-items:center; gap:.35rem; border:2px solid var(--ink); border-radius:4px; background:var(--yellow); padding:.28rem .55rem; color:var(--ink); font-size:.7rem; font-weight:800; letter-spacing:.08em; }
+.sms-window { overflow:hidden; border:3px solid var(--ink); border-radius:10px; background:#f7f0d8; box-shadow:4px 4px 0 var(--pixel-shadow); }
+.sms-top { display:flex; justify-content:space-between; background:var(--ink); padding:.45rem .65rem; color:#fff8e9; font-size:.7rem; font-weight:700; }
+.sms-bubble { margin:.7rem; border:2px solid var(--ink); border-radius:7px 7px 7px 1px; background:#d9f1df; padding:.9rem; font-size:1.05rem; font-weight:800; line-height:1.45; }
+.pixel-option { border:2px solid var(--ink)!important; border-radius:6px!important; box-shadow:2px 3px 0 var(--ink); }
+.pixel-option:active { transform:translate(2px,2px); box-shadow:none; }
+.star { color:var(--coral); text-shadow:1px 1px 0 var(--ink); animation:twinkle 2.5s steps(2) infinite; }
+@keyframes twinkle { 50% { opacity:.45; transform:scale(.82); } }
 .float { animation:float 7s ease-in-out infinite; } .float-slow { animation:float 10s ease-in-out infinite reverse; }
 @keyframes float { 50% { transform:translateY(-12px) rotate(4deg); } }
 @keyframes steam { to { transform:translateY(-16px); opacity:0; } }

@@ -1,0 +1,1 @@
+export function MemoryMessage({children}:{children:React.ReactNode}){return <div className="sms-window"><div className="sms-top"><span>✉ 回忆短信 · 我们的 2026</span><span>21:06</span></div><div className="sms-bubble">{children}<span className="star ml-2">✦</span></div></div>}
