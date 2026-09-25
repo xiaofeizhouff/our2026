@@ -4,7 +4,7 @@ type Props = { info: BasicInfo; onChange: (info: BasicInfo) => void };
 
 export function MemoryPackageForm({ info, onChange }: Props) {
   return <div className="package-form">
-    <img src="/illustrations/profile/package.png" alt="手绘回忆包裹" className="package-art" />
+    <img src="/illustrations/profile/package-cropped.png" alt="手绘回忆包裹" className="package-art" />
     <div className="package-slip">
       <div className="flex items-start justify-between gap-2"><div><p className="text-[10px] font-black tracking-[.12em]">MEMORY EXPRESS</p><p className="text-[10px]">回忆快递单 · 2026</p></div><span className="border border-[#1f3155] px-1 text-[9px]">NO.2026</span></div>
       <div className="my-2 border-t border-dashed border-[#1f3155]" />
