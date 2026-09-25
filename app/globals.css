@@ -24,19 +24,18 @@ button { -webkit-tap-highlight-color:transparent; }
 
 .package-form { position:relative; width:min(92vw,390px); margin:0; }
 .package-art { display:block; width:100%; height:auto; }
-.package-slip { position:absolute; left:20.5%; top:32%; width:59%; color:#1f3155; line-height:1.2; }
-.shipping-head { display:flex; align-items:flex-start; justify-content:space-between; gap:8px; }
-.shipping-title { font-size:20px; font-weight:900; letter-spacing:.08em; line-height:1; }
-.shipping-subtitle { margin-top:4px; font-size:14px; }
-.shipping-number { border:1px solid #1f3155; padding:2px 5px; font-size:14px; white-space:nowrap; }
-.package-slip label { display:block; margin-top:18px; font-size:15px; font-weight:600; letter-spacing:.03em; }
-.package-slip input { display:block; width:100%; height:50px; margin-top:9px; border:1px solid #1f3155; border-radius:1px; background:rgba(255,255,255,.38); padding:8px 12px; color:#1f3155; font-size:19px; outline:none; }
+.package-logo { position:absolute; left:19%; top:20%; margin:0; color:#1f3155; font-size:18px; font-weight:900; letter-spacing:.08em; line-height:1; }
+.package-slip { position:absolute; left:27%; top:40.8%; width:48%; color:#1f3155; line-height:1.15; }
+.shipping-subtitle { margin:0; font-size:12px; }
+.package-slip .my-2 { margin-block:5px; }
+.package-slip label { display:block; margin-top:6px; font-size:13px; font-weight:600; letter-spacing:.03em; }
+.package-slip input { display:block; width:100%; height:29px; margin-top:3px; border:1px solid #1f3155; border-radius:1px; background:rgba(255,255,255,.38); padding:3px 8px; color:#1f3155; font-size:14px; outline:none; }
 .package-slip input:focus { background:#fff; box-shadow:2px 2px 0 #1f3155; }
-.shipping-footer { display:flex; justify-content:space-between; gap:8px; margin-top:18px; border-top:1px dashed #1f3155; padding-top:10px; font-size:13px; line-height:1.35; }
-.barcode { letter-spacing:1px; font-size:16px; font-weight:900; white-space:nowrap; }
-.days-bubble { position:relative; width:min(88vw,340px); margin:0; }
+.shipping-footer { display:flex; justify-content:space-between; gap:4px; margin-top:5px; border-top:1px dashed #1f3155; padding-top:3px; font-size:10px; line-height:1.2; }
+.barcode { letter-spacing:0; font-size:12px; font-weight:900; white-space:nowrap; }
+.days-bubble { position:relative; width:min(92vw,390px); margin:0; }
 .days-bubble img { display:block; width:100%; height:100%; object-fit:contain; }
-.days-bubble p { position:absolute; left:13%; right:13%; top:54%; margin:0; transform:translateY(-42%); text-align:center; color:#1f3155; font-size:clamp(14px,3.8vw,17px); font-weight:700; line-height:1.45; }
+.days-bubble p { position:absolute; left:13%; right:13%; top:54%; margin:0; transform:translateY(-42%); text-align:center; color:#1f3155; font-size:clamp(13px,3.5vw,16px); font-weight:700; line-height:1.45; }
 section.my-auto:has(.package-form) { display:flex; width:100%; max-width:430px; margin:auto; padding:20px 0; flex-direction:column; align-items:center; }
 section.my-auto:has(.package-form) > * + * { margin-top:32px; }
 section.my-auto:has(.package-form) > .package-form { margin-top:0; }
