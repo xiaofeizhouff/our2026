@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { BasicInfo } from "@/types/questionnaire";
 
 type Props = { info: BasicInfo; onChange: (info: BasicInfo) => void };
 
 export function MemoryPackageForm({ info, onChange }: Props) {
   return <div className="package-form">
-    <img src="/illustrations/profile/package-cropped.png" alt="手绘回忆包裹" className="package-art" />
+    <Image src="/illustrations/profile/package-cropped.png" alt="手绘回忆包裹" className="package-art" width={1200} height={1450} sizes="(max-width: 430px) 92vw, 390px" preload unoptimized />
     <div className="package-slip">
       <div className="shipping-head">
         <p className="shipping-title">MEMORY EXPRESS</p>
