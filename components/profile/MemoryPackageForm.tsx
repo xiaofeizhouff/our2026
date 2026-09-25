@@ -5,7 +5,7 @@ type Props = { info: BasicInfo; onChange: (info: BasicInfo) => void };
 
 export function MemoryPackageForm({ info, onChange }: Props) {
   return <div className="package-form">
-    <Image src="/illustrations/profile/package-cropped.png" alt="手绘回忆包裹" className="package-art" width={1200} height={1450} sizes="(max-width: 430px) 92vw, 390px" preload unoptimized />
+    <Image src="/illustrations/profile/package-cropped.png" alt="手绘回忆包裹" className="package-art" width={911} height={1084} sizes="(max-width: 430px) 70vw, 297px" preload unoptimized />
     <div className="package-slip">
       <div className="shipping-head">
         <p className="shipping-title">MEMORY EXPRESS</p>
